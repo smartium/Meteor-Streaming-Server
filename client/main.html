@@ -1,0 +1,23 @@
+<head>
+  <title>SMARTIUM streaming</title>
+</head>
+<body>
+</body>
+
+<template name="applicationLayout">
+  {{> Template.dynamic template=main}}
+</template>
+
+<template name="home">
+  <form>
+    Nome do stream:
+    <!-- <input type="text" value="{{epoch}}" id="streamName"> -->
+    <input type="text" value="smartium" id="streamName">
+    <button id="submit">GERAR</button>
+  </form>
+</template>
+
+<template name="livePlayer">
+  <h1>SMARTIUM streaming server</h1>
+  <video id="videoElement" width="854" controls></video>
+</template>
