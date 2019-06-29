@@ -35,9 +35,9 @@ Template.livePlayer.onCreated(()=> {
         var videoElement = document.getElementById('videoElement');
         var flvPlayer = flvjs.createPlayer({
           type: 'flv',
-          // url: `http://${ip}:8000/live/${stream}.flv`
+          url: `http://${ip}:8000/live/${streamName.get()}.flv`
           // url: `http://192.168.0.2:8000/live/${stream}.flv`
-          url: `ws://${ip}:8000/live/${streamName.get()}.flv`
+          // url: `ws://${ip}:8000/live/${streamName.get()}.flv`
         });
         flvPlayer.attachMediaElement(videoElement);
         flvPlayer.load();
