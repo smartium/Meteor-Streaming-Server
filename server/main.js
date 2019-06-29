@@ -26,7 +26,7 @@ nms.run();
 theIP = new ReactiveVar();
 
 Meteor.startup(() => {
-  var basicAuth = new HttpBasicAuth("luizinho", "searom");
+  var basicAuth = new HttpBasicAuth("smartium", "live");
   basicAuth.protect();
 });
 
