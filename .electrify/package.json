@@ -1,0 +1,7 @@
+{
+  "name": "my-electrified-app",
+  "main": "index.js",
+  "dependencies": {
+    "meteor-electrify": "4.0.0"
+  }
+}
