@@ -62,13 +62,14 @@ Template.home.helpers({
 Template.home.events({
   'submit form'(e) {
     e.preventDefault();
-    newStream = Streams.insert({
-      owner: 'smartium',
-      name: e.target.streamName.value,
-      createdAt: new Date().valueOf()
-    });
-    FlowRouter.go(`/live/${newStream}`);
+    // newStream = Streams.insert({
+    //   owner: 'smartium',
+    //   name: e.target.streamName.value,
+    //   createdAt: new Date().valueOf()
+    // });
+    // FlowRouter.go(`/live/${newStream}`);
     // FlowRouter.go(`/live`);
+    Meteor.call('startServer', e.target.str1url.value, e.target.str1key.value, e.target.str2url.value, e.target.str2key.value, e.target.str3url.value, e.target.str3key.value);
   }
 });
 

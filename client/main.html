@@ -9,11 +9,21 @@
 </template>
 
 <template name="home">
+  <h1>Streaming Relay Server</h1>
   <form>
-    Nome do stream:
-    <!-- <input type="text" value="{{epoch}}" id="streamName"> -->
-    <input type="text" value="smartium" id="streamName">
-    <button id="submit">GERAR</button>
+    <div class="form-field">
+      <input type="url" id="str1url" value="rtmp://a.rtmp.youtube.com/live2" placeholder="URL"><input type="text" id="str1key" value="qqjj-fgz5-by1u-7p6v-2hpq" placeholder="KEY">
+    </div>
+    <div class="form-field">
+      <input type="url" id="str2url" value="rtmp://live-lis.twitch.tv/app" placeholder="URL"><input type="text" id="str2key" value="live_529725241_5nub3fbsFabFhtTdzsemIOnHA5lLyV" placeholder="KEY">
+    </div>
+    <div class="form-field">
+      <input type="url" id="str3url" value="" placeholder="URL"><input type="text" id="str3key" value="" placeholder="KEY">
+    </div>
+
+    <!-- Nome do stream:
+    <input type="text" value="smartium" id="streamName"> -->
+    <button id="submit">ENVIAR</button>
   </form>
 </template>
 
